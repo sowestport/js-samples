@@ -5,6 +5,8 @@
     "strict": true,
     "noImplicitAny": false,
     "lib": ["esnext", "es6", "dom", "dom.iterable"],
+//    "pretty": true,
+    "sourceMap": true,
     "moduleResolution": "Node"
   }
 }

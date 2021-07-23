@@ -58,11 +58,13 @@ module.exports = (env) => {
     resolve: {
       extensions: [".ts", ".js"],
     },
+   devtool: "source-map",
     output: {
       path: `${__dirname}/public`,
       publicPath: "/",
       filename: "index.js",
       libraryTarget: "window",
+     devtoolModuleFilenameTemplate: 'file:///[absolute-resource-path]'
     },
     plugins: [].concat(
       env.SKIP_HTML
